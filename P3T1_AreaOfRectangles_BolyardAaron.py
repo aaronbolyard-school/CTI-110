@@ -2,7 +2,7 @@
 # P3T1
 #  - Calculates the area of two rectangles.
 #  - Prints which rectangle has greater area.
-# 2018-02-27
+# 2018-03-06
 #
 
 # Variables.
