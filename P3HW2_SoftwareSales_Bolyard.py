@@ -22,9 +22,9 @@ def main_ADB():
     totalPriceAfterDiscount_ADB = 0.0 # Total price of licenses after discount.
 
     # Get the quantity of licenses.
-    quantity_ADB = float(input("Enter how many Widget Sofware licenses are you buying: "))
+    quantity_ADB = float(input("Enter how many Widget Software licenses are you buying: "))
 
-    # Computer discounts per requirements.
+    # Compute discounts per requirements.
     if quantity_ADB >= 100:
         discountRate_ADB = DISCOUNT_D_ADB
     elif quantity_ADB >= 50:
@@ -37,7 +37,7 @@ def main_ADB():
         # There is no discount for purchases under 10.
         discountRate_ADB = 0.0
 
-    # Computer the price, before and after discount.
+    # Compute the price, before and after discount.
     totalPrice_ADB = (PACKAGE_PRICE * quantity_ADB)
     totalPriceAfterDiscount_ADB = totalPrice_ADB * ((100 - discountRate_ADB) / 100)
 
@@ -48,5 +48,5 @@ def main_ADB():
     print("You saved ${0:0.02f}.".format(totalPrice_ADB - totalPriceAfterDiscount_ADB))
 
 # Run a few times.
-for i in range(1, 5):
+for i in range(1, 6):
     main_ADB()
