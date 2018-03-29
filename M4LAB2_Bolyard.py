@@ -75,7 +75,7 @@ def main_ADB():
     resetPen_ADB(atuin_ADB, -LETTER_SPAN_SIZE / 2, 0)
     printA_ADB(atuin_ADB, LETTER_SPAN_SIZE)
 
-    # ...and the B slightly to th eright.
+    # ...and the B slightly to the right.
     resetPen_ADB(atuin_ADB, LETTER_SPAN_SIZE / 2, 0)
     printB_ADB(atuin_ADB, LETTER_SPAN_SIZE)
 
