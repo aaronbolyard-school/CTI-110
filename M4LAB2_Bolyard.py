@@ -64,6 +64,18 @@ def printB_ADB(atuin_ADB, size_ADB):
     # Bottom curve of B
     printCircle_ADB(atuin_ADB, size_ADB / 2, 270)
 
+def printD_ADB(atuin_ADB, size_ADB):
+    # Side of D
+    atuin_ADB.left(90)
+    atuin_ADB.forward(size_ADB * 1.25)
+
+    # Top of D
+    atuin_ADB.right(90)
+    atuin_ADB.forward(size_ADB / 4)
+
+    # Curve
+    printCircle_ADB(atuin_ADB, (size_ADB * 1.25) / 2, 180)
+
 def main_ADB():
     window_ADB = turtle.Screen()
     atuin_ADB = turtle.Turtle()
@@ -72,11 +84,15 @@ def main_ADB():
     atuin_ADB.pencolor("grey")
 
     # Draw the A slightly to the left...
-    resetPen_ADB(atuin_ADB, -LETTER_SPAN_SIZE / 2, 0)
+    resetPen_ADB(atuin_ADB, -LETTER_SPAN_SIZE * 1.5, 0)
     printA_ADB(atuin_ADB, LETTER_SPAN_SIZE)
 
-    # ...and the B slightly to the right.
-    resetPen_ADB(atuin_ADB, LETTER_SPAN_SIZE / 2, 0)
+    # ... and draw the D in the middle..
+    resetPen_ADB(atuin_ADB, -LETTER_SPAN_SIZE / 3, 0)
+    printD_ADB(atuin_ADB, LETTER_SPAN_SIZE)
+
+    # ...and lastly the B slightly to the right.
+    resetPen_ADB(atuin_ADB, LETTER_SPAN_SIZE, 0)
     printB_ADB(atuin_ADB, LETTER_SPAN_SIZE)
 
     window_ADB.mainloop()
