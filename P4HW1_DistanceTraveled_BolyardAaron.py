@@ -1,3 +1,4 @@
+# CTI-110
 # P4HW1
 #  - Shows a table of the distance traveled.
 # Aaron Bolyard
@@ -6,7 +7,7 @@
 
 import math
 
-def main():
+def main_ADB():
     # Variables.
     speedMPH_ADB         = 0 # Speed, in miles-per-hour, as a float.
     numHoursTraveled_ADB = 0 # Number of hours traveled, as an integer
@@ -26,4 +27,4 @@ def main():
 
         print(hour_ADB, distanceTraveled_ADB, sep='\t')
 
-main()
+main_ADB()

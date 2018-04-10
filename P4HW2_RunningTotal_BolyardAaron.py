@@ -1,10 +1,11 @@
+# CTI-110
 # P4HW2
 #  - Calculates a running total.
 # Aaron Bolyard
 # 2018-04-10
 #
 
-def main():
+def main_ADB():
     # Variables.
     runningTotal_ADB = 0 # Running total; i.e., the sum of all numbers entered.
     currentValue_ADB = 0 # Current input value.
@@ -21,4 +22,4 @@ def main():
 
     print("Total:", runningTotal_ADB)
 
-main()
+main_ADB()
