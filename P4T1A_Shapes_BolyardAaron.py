@@ -1,5 +1,5 @@
 # CTI-110
-# M4LAB1
+# P4T1A
 #  - Draws a square and then a rectangle.
 #  - You could also say it draws a house like a kid.
 #    It's just missing the stick people.
@@ -22,7 +22,7 @@ def main_ADB():
 
     # Draw a square.
     #
-    # A square are four equal length sides with an
+    # A square is four equal length sides with an
     # interior angle of 90 degrees.
     for i in range(0, 4):
         atuin_ADB.forward(50)

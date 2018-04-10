@@ -1,7 +1,8 @@
-# M4LAB2
+# CTI-110
+# P4T1B
 #  - Prints initials.
 # Aaron Bolyard
-# 2018-03-29
+# 2018-04-10
 #
 
 import turtle
